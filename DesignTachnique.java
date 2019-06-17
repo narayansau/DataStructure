@@ -72,6 +72,11 @@ public class DesignTachnique{
                         break;
                     case 3:
                         System.out.println( "3 : \t Divide-and-Conquer, Decrease-and-Conquer " );
+                        DivideAndConquer divideAndConquor=new DivideAndConquer();
+                        divideAndConquor.FinfNuberByDivideAndConquor();
+
+                        System.out.println( "Sum of First 10 number is " +
+                                divideAndConquor.DecreasAndConquor( 10 ) );
 
                         break;
                     case 4:
