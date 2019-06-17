@@ -31,6 +31,7 @@ do {
     System.out.println("6\t Link List");
     System.out.println("7\t Searching");
     System.out.println("8\t Sorting");
+    System.out.println( "0 : \t Exit  "  );
     System.out.println( "Please enter your choice:" );
 
     //Get user's choice
@@ -39,7 +40,12 @@ do {
     //Display the title of the chosen module
     switch (choice) {
         case 1:
-            System.out.println( "1\t Example of  Design Technique" );
+            System.out.println( "1\t Example of  Design Technique\n" );
+            DesignTachnique  bruteForce  = new DesignTachnique();
+
+
+
+
             break;
 
         case 2:
@@ -75,7 +81,21 @@ do {
             System.out.println( "Invalid choice" );
 
     }   //Choice
-}   while ( !  ( choice >0 && choice < 9));
-     //return choice;
+
+    System.out.println( "Press Any key to continue or 0 to exit" );
+    choice=in.nextInt();
+}   while (    choice != 0);
+
+
     }   // Main_choice
+
+
+    public static void clearScreen() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
+
+
+
 }
+
