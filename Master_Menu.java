@@ -13,8 +13,7 @@ public class Master_Menu{
     }
 
 
-
-    public  Master_Menu () {
+    Master_Menu() {
         Scanner in = new Scanner(System.in);
 
 
@@ -41,7 +40,7 @@ do {
     switch (choice) {
         case 1:
             System.out.println( "1\t Example of  Design Technique\n" );
-            DesignTachnique  bruteForce  = new DesignTachnique();
+            DesignTachnique allDesignTechnique=new DesignTachnique();
 
 
 
@@ -50,31 +49,31 @@ do {
 
         case 2:
             System.out.println( "2\t Data Types " );
-            ;
+
             break;
         case 3:
             System.out.println( "3\t Array" );
-            ;
+
             break;
         case 4:
             System.out.println( "4\t Stack" );
-            ;
+
             break;
         case 5:
             System.out.println( "5\t Queue" );
-            ;
+
             break;
         case 6:
             System.out.println( "6\t Link List" );
-            ;
+
             break;
         case 7:
             System.out.println( "7\t Searching" );
-            ;
+
             break;
         case 8:
             System.out.println( "8\t Sorting" );
-            ;
+
             break;
 
         default:

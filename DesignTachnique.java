@@ -1,4 +1,6 @@
-/********************************************************
+package com.june13_2019.ds;
+
+/******************************************************
  * 1.1.1	Brute force
  * 1.1.2	Greedy Algorithm
  * 1.1.3	Divide-and-Conquer, Decrease-and-Conquer
@@ -6,14 +8,13 @@
  * 1.1.5	Transform and Conquer
  * 1.1.6	Recursion
  * 1.1.7	Backtracking
- */
+ ********************************************************/
 
 
 
 
-package com.june13_2019.ds;
 
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class DesignTachnique{
@@ -70,28 +71,28 @@ public class DesignTachnique{
 
                         break;
                     case 3:
-                        System.out.println( "3\t Array" );
-                        ;
+                        System.out.println( "3 : \t Divide-and-Conquer, Decrease-and-Conquer " );
+
                         break;
                     case 4:
                         System.out.println( "4\t Stack" );
-                        ;
+
                         break;
                     case 5:
                         System.out.println( "5\t Queue" );
-                        ;
+
                         break;
                     case 6:
                         System.out.println( "6\t Link List" );
-                        ;
+
                         break;
                     case 7:
                         System.out.println( "7\t Searching" );
-                        ;
+
                         break;
                     case 8:
                         System.out.println( "8\t Sorting" );
-                        ;
+
                         break;
                     case 0:
                         return;
