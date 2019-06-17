@@ -81,7 +81,8 @@ do {
 
     }   //Choice
 
-    System.out.println( "Press Any key to continue or 0 to exit" );
+
+    pressAnyKeyToContinue();
     choice=in.nextInt();
 }   while (    choice != 0);
 
@@ -92,6 +93,14 @@ do {
     public static void clearScreen() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
+    }
+
+    public void pressAnyKeyToContinue() {
+        System.out.println( "Press Enter to continue or 0 to exit..." );
+        try {
+            System.in.read();
+        } catch (Exception e) {
+        }
     }
 
 

@@ -80,11 +80,20 @@ public class DesignTachnique{
 
                         break;
                     case 4:
-                        System.out.println( "4\t Stack" );
+                        System.out.println( "4 : \t Dynamic Programming " );
+                        DynamicProgramming dynamicProgrammingExample=new DynamicProgramming();
+                        int recFib=dynamicProgrammingExample.recursiveFibonacci( 10 );
+                        int dynFib=dynamicProgrammingExample.dynamicFibonacci( 10 );
+                        System.out.println( " To Find fibonacci(10) via recursive program takes : " +
+                                dynamicProgrammingExample.recursiveCounter +
+                                " Steps \n and with Dynamic programming it takes : " +
+                                dynamicProgrammingExample.dynamicCounter +
+                                " Steps \n The value of Fib(10) is " + recFib +
+                                " And " + dynFib );
 
                         break;
                     case 5:
-                        System.out.println( "5\t Queue" );
+                        System.out.println( "5 : \t Transform and Conquer " );
 
                         break;
                     case 6:
