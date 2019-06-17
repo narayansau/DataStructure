@@ -33,7 +33,8 @@ public class Main {
         i=masterMenu.getChoice();
 
         System.out.println( "Menu choice is " + i );
-       //end of switch
+       masterMenu. clearScreen();
+        //end of switch
     }//end of the main method
 }//end of class
 

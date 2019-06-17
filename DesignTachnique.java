@@ -65,6 +65,8 @@ public class DesignTachnique{
 
                     case 2:
                         System.out.println( "2 : \t Greedy Algorithm "  );
+                        GreedyAlogorithm greedyAlogorithm = new GreedyAlogorithm();
+                        greedyAlogorithm.CountCoin();
 
                         break;
                     case 3:
