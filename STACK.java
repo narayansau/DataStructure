@@ -1,5 +1,7 @@
 package com.june13_2019.ds;
 
+import java.util.EmptyStackException;
+
 public interface STACK<E>{
 
     /**********************************************************
@@ -35,7 +37,7 @@ public interface STACK<E>{
      **********************************************************/
 
 
-    public E pop();
+    public E pop() throws EmptyStackException;
 
 
     // Return TOP element

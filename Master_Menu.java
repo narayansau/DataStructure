@@ -64,6 +64,8 @@ do {
             break;
         case 4:
             System.out.println( "4\t Stack" );
+
+            // Using Array Implementation
             Integer[] listArray={1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
             arrayStack <Integer> myStack=new arrayStack <Integer>();
             System.out.println( "Stack is started \n" );
@@ -77,6 +79,21 @@ do {
             myStack.top();
             myStack.pop();
             myStack.display();
+
+            // Using Link list implimentation
+            StackWithLiknList <Integer> myStack1=new StackWithLiknList <Integer>();
+            System.out.println( "Stack is started \n" );
+
+
+            myStack1.clear();
+            myStack1.display();
+            myStack1.push( 10 );
+            for (int i=1; i < 8; i++) myStack1.push( i * i );
+            myStack1.display();
+            myStack1.top();
+            myStack1.pop();
+            myStack1.display();
+
 
             break;
         case 5:
