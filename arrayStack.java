@@ -103,7 +103,7 @@ public class arrayStack<E> implements STACK <E>{
             s+=listStack[i];
             s+=(i == 0 ? " " : " , ");
         }
-        ;
+        
         s+="]\n";
         System.out.print( s );
     }
