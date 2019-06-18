@@ -49,14 +49,34 @@ do {
 
         case 2:
             System.out.println( "2\t Data Types " );
+            MyDataTypes myDataTypes=new MyDataTypes();
+            myDataTypes.PrimitivDataType();
+            myDataTypes.NonPrimitiveDataType();
 
             break;
         case 3:
             System.out.println( "3\t Array" );
 
+            ArrayClass myArray=new ArrayClass();
+
+            myArray.AllKindsOfArrayDeclaration();
+
             break;
         case 4:
             System.out.println( "4\t Stack" );
+            Integer[] listArray={1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+            arrayStack <Integer> myStack=new arrayStack <Integer>();
+            System.out.println( "Stack is started \n" );
+            myStack.arrayStackfill( listArray );
+
+            myStack.clear();
+            myStack.display();
+            myStack.push( 10 );
+            for (int i=1; i < 8; i++) myStack.push( i * i );
+            myStack.display();
+            myStack.top();
+            myStack.pop();
+            myStack.display();
 
             break;
         case 5:

@@ -11,10 +11,6 @@ package com.june13_2019.ds;
  ********************************************************/
 
 
-
-
-
-
 import java.util.Scanner;
 
 public class DesignTachnique{
@@ -43,9 +39,8 @@ public class DesignTachnique{
                 System.out.println( "2 : \t Greedy Algorithm "  );
                 System.out.println( "3 : \t Divide-and-Conquer, Decrease-and-Conquer "  );
                 System.out.println( "4 : \t Dynamic Programming "  );
-                System.out.println( "5 : \t Transform and Conquer "  );
-                System.out.println( "6 : \t Recursion "  );
-                System.out.println( "7 : \t Backtracking  "  );
+                System.out.println( "5 : \t Recursion " );
+
                 System.out.println( "0 : \t Exit  "  );
 
                 System.out.println( "Please enter your choice:" );
@@ -93,21 +88,14 @@ public class DesignTachnique{
 
                         break;
                     case 5:
-                        System.out.println( "5 : \t Transform and Conquer " );
+                        System.out.println( "5 : \t Recursion " );
+                        Recursion recursion=new Recursion();
+                        System.out.println( "Factorial of 6 is : " + recursion.Factorial( 6l ) );
+
+                        System.out.println( "Sum  of first 6 number  is : " + recursion.Sum( 6 ) );
 
                         break;
-                    case 6:
-                        System.out.println( "6\t Link List" );
 
-                        break;
-                    case 7:
-                        System.out.println( "7\t Searching" );
-
-                        break;
-                    case 8:
-                        System.out.println( "8\t Sorting" );
-
-                        break;
                     case 0:
                         return;
 
