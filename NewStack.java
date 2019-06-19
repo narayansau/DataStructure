@@ -2,32 +2,18 @@ package com.june13_2019.ds;
 
 import java.util.EmptyStackException;
 
-public interface STACK<E>{
-
+public interface NewStack<E> extends STACK <E>{
     /**********************************************************
-     *
      * @param
      * @author Narayan Sau
-     * @return null
+     * @return NewStack
      * Reinitialize the stack. The user is responsible for
      *      reclaiming the storage used by the stack elements.
      *
      **********************************************************/
 
 
-    public void clear();
-
-
-    /**********************************************************
-     * @param  it
-     * @author Narayan Sau
-     * @return null
-     * Push an element onto the top of the stack.
-     *      @param it The element being pushed onto the stack.
-     **********************************************************/
-
-
-    public void push(E it);
+    public NewStack <E> newpush(E it);
 
 
     /**********************************************************
@@ -39,30 +25,18 @@ public interface STACK<E>{
      **********************************************************/
 
 
-    public E pop() throws EmptyStackException;
+    public NewStack <E> newpop() throws EmptyStackException;
 
 
     // Return TOP element
 
-    public E top();
+    public NewStack <E> newtop();
 
     /**
      * @return A copy of the top element.
      */
 
-    public E topValue();
+    public NewStack <E> newtopValue();
 
-    /**
-     * @return The number of elements in the stack.
-     */
 
-    public int size();
-
-    public int incSize();
-
-    public int decrSize();
-
-    // Check if the stack is empty
-
-    public boolean isEmpty();
 }

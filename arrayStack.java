@@ -1,6 +1,15 @@
 package com.june13_2019.ds;
 
 public class arrayStack<E> implements STACK <E>{
+    @Override
+    public int incSize() {
+        return 0;
+    }
+
+    @Override
+    public int decrSize() {
+        return 0;
+    }
 
     private static final int MAXSIZE=10; // Maximum size of list
     private E[] listStack; // Array holding list elements

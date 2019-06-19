@@ -14,7 +14,7 @@ public class Node<DataType>{
 
     public Node(DataType element, Node next) {
         this.element=element;
-        Next=next;
+        this.Next=next;
     }
 
     public Node(Node next) {

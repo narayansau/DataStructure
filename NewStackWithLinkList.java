@@ -2,38 +2,37 @@ package com.june13_2019.ds;
 
 import java.util.EmptyStackException;
 
-public class StackWithLiknList<E> implements STACK <E>{
-
+public class NewStackWithLinkList<E> implements NewStack <E>{
     private static int size=0;
     private Node <E> top;
 
+    public NewStackWithLinkList() {
+        super();
+
+    }
+
     @Override
     public int incSize() {
-        return size++;
+        return 0;
     }
 
     @Override
     public int decrSize() {
-        return size--;
-    }
-// Constructor an EMpty Stack...
-
-    public StackWithLiknList() {
-        this.top=null;
-        this.size=0;
+        return 0;
     }
 
-    /**
-     * *******************************************************
+    /**********************************************************
      *
-     * @return null
+     * @param it@author Narayan Sau
+     * @return NewStack
      * Reinitialize the stack. The user is responsible for
-     * reclaiming the storage used by the stack elements.
-     * @author Narayan Sau
+     *      reclaiming the storage used by the stack elements.
+     *
      **********************************************************/
     @Override
-    public void clear() {
-        top=null;
+    public NewStackWithLinkList <E> newpush(E it) {
+        push( it );
+        return this;
     }
 
     /**********************************************************
@@ -44,6 +43,7 @@ public class StackWithLiknList<E> implements STACK <E>{
      **********************************************************/
     @Override
     public void push(E it) {
+
         // create a new node
         Node <E> newnode=new Node <E>( it, top );
         // pointtop to new node
@@ -60,7 +60,6 @@ public class StackWithLiknList<E> implements STACK <E>{
      **********************************************************/
     @Override
     public E pop() throws EmptyStackException {
-
         if (isEmpty()) throw new EmptyStackException();
         E temp=top.getElement();
         System.out.println( "top Value : " + temp + " is getting poped" );
@@ -84,6 +83,44 @@ public class StackWithLiknList<E> implements STACK <E>{
         return top();
     }
 
+    /*********************************************************
+     * @author Narayan Sau
+     * @return E
+     * Remove and return the element at the top of the stack.
+     *      @return The element at the top of the stack.
+     **********************************************************/
+    @Override
+    public NewStackWithLinkList <E> newpop() throws EmptyStackException {
+        E temp=pop();
+        return this;
+    }
+
+    @Override
+    public NewStackWithLinkList <E> newtop() {
+        E temp=top();
+        return this;
+    }
+
+    /**
+     * @return A copy of the top element.
+     */
+    @Override
+    public NewStackWithLinkList <E> newtopValue() {
+        return newtop();
+    }
+
+    /**********************************************************
+     * @author Narayan Sau
+     * @return null
+     * Reinitialize the stack. The user is responsible for
+     *      reclaiming the storage used by the stack elements.
+     *
+     **********************************************************/
+    @Override
+    public void clear() {
+        top=null;
+    }
+
     /**
      * @return The number of elements in the stack.
      */
@@ -92,14 +129,13 @@ public class StackWithLiknList<E> implements STACK <E>{
         return size;
     }
 
-
     @Override
     public boolean isEmpty() {
         return (top == null);
     }
 
 
-    public void display() {
+    public NewStackWithLinkList display() {
         String t;
         if (isEmpty()) t=" Stack is Empty";
         else t="Stack has data";
@@ -117,5 +153,6 @@ public class StackWithLiknList<E> implements STACK <E>{
 
         s+="]\n";
         System.out.print( s );
+        return this;
     }
 }
