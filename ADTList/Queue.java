@@ -1,0 +1,47 @@
+package com.june13_2019.ds.ADTList;
+
+
+/**
+ * Queue ADT
+ */
+public interface Queue<E>{
+    /**
+     * Reinitialize the queue. The user is responsible for
+     * reclaiming the storage used by the queue elements.
+     */
+    public void clear();
+
+    /**
+     * Place an element at the rear of the queue.
+     *
+     * @param it The element being enqueued.
+     */
+    public void enqueue(E it);
+
+    /**
+     * Remove and return element at the front of the queue.
+     *
+     * @return The element at the front of the queue.
+     */
+    public E dequeue();
+
+    /**
+     * @return The front element.
+     */
+    public E peek();
+
+    /**
+     * @return The number of elements in the queue.
+     */
+    public int length();
+
+//Checks if the queue is full.
+
+    public boolean isFull();
+
+// Checks if the queue is empty.
+
+    public boolean isEmpty();
+
+}
+
